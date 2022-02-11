@@ -16,47 +16,52 @@ export default function Carousel() {
   return (
     <Flex position="relative" height="100%" mx="24" px="24" my="12">
       <Swiper navigation={true} pagination={true} modules={[Navigation, Pagination]} className={styles.swiper} >
-        {/* <SwiperSlide>Slide 1</SwiperSlide> */}
         <SwiperSlide>
           <Slide
             title="Europa"
-            descripiton="O continente mais Antigo"
-            background="url('images/continents/Europe.jpg')"
+            description="O continente mais Antigo"
+            background="url('images/Europe.jpg')"
+            link="europa"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Slide
             title="America do Sul"
-            descripiton="Uma das regiões mais biodiversas de todo o planeta."
-            background="url('images/continents/South-America.jpg')"
+            description="Uma das regiões mais biodiversas de todo o planeta."
+            background="url('images/South-America.jpg')"
+            link="america-do-sul"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Slide
             title="America do Norte"
-            descripiton="Na América do Norte se encontra maior fronteira em termos de extensão do planeta."
-            background="url('images/continents/North-America.jpg')"
+            description="Na América do Norte se encontra maior fronteira em termos de extensão do planeta."
+            background="url('images/North-America.jpg')"
+            link="america-do-norte"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Slide
             title="Ásia"
-            descripiton="A Ásia é o maior dos continentes, tanto em área como em população."
-            background="url('images/continents/Asia.jpg')"
+            description="A Ásia é o maior dos continentes, tanto em área como em população."
+            background="url('images/Asia.jpg')"
+            link="asia"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Slide
             title="África"
-            descripiton="A África é conhecida pela sua pluralidade étnica e cultural."
-            background="url('images/continents/Africa.jpg')"
+            description="A África é conhecida pela sua pluralidade étnica e cultural."
+            background="url('images/Africa.jpg')"
+            link="africa"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Slide
             title="Oceania"
-            descripiton="A Oceania possui mais de 10 mil ilhas que constituem 14 países independentes"
-            background="url('images/continents/Oceania.jpg')"
+            description="A Oceania possui mais de 10 mil ilhas que constituem 14 países independentes"
+            background="url('images/Oceania.jpg')"
+            link="oceania"
           />
         </SwiperSlide>
 

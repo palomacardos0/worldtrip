@@ -1,16 +1,12 @@
 import { Center, Flex } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
-import { Header } from "../components/Header";
 import { TravelTypesMenu } from "../components/TravelTypesMenu";
 import { Divider, Text } from "@chakra-ui/react";
 import Carousel from "../components/Carousel";
 
 export default function Home() {
   return (
-    <Flex
-      direction="column"
-    >
-      <Header />
+    <>
       <Banner />
       <TravelTypesMenu />
       <Center>
@@ -24,6 +20,6 @@ export default function Home() {
       </Center>
       <Carousel />
 
-    </Flex>
+    </>
   )
 }

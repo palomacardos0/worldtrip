@@ -1,14 +1,17 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface SlideProps {
   title: string;
-  descripiton: string;
+  description: string;
   background: string;
+  link: string
 }
 
-export function Slide({ title, descripiton, background }: SlideProps) {
+export function Slide({ title, description, background, link }: SlideProps) {
   return (
     <Box color="gray.50" display="flex" justifyContent="center" alignItems="center" height="96">
+
       <Box
         position="absolute"
         display="flex"
@@ -22,17 +25,25 @@ export function Slide({ title, descripiton, background }: SlideProps) {
         backgroundImage={background}
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
+        textAlign="center"
+
 
       >
+        <Link href={`/${link}`}>
 
+          <a >
+            <Heading>
+              {title}
+            </Heading>
+            <Text>
+              {description}
+            </Text>
+          </a>
 
-        <Heading>
-          {title}
-        </Heading>
-        <Text>
-          {descripiton}
-        </Text>
+        </Link>
       </Box>
+
     </Box>
+
   )
 }

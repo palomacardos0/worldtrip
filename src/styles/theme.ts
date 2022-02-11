@@ -15,14 +15,14 @@ export const theme = extendTheme({
   },
   fonts: {
     heading: 'Poppins',
-    body: 'Poppins'
+    body: 'Poppins',
 
   },
   style: {
     global: {
       body: {
         bg: 'gray.50',
-        color: 'gray.600'
+        color: 'gray.600',
       }
     }
   }
