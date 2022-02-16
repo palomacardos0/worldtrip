@@ -35,7 +35,7 @@ export function Slide({ title, description, background, link }: SlideProps) {
             <Heading>
               {title}
             </Heading>
-            <Text>
+            <Text mx="12">
               {description}
             </Text>
           </a>

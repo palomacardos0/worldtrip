@@ -1,6 +1,10 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export function Banner() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  })
   return (
     <Flex
       display="flex"
@@ -10,13 +14,13 @@ export function Banner() {
         backgroundImage="url('images/Background.svg')"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
-        height="80"
+        height={["60", "80"]}
         width="100vw"
         display="flex"
         justifyContent="space-between"
       >
-        <Box marginLeft="36" display="flex" justifyContent="center" flexDirection="column">
-          <Text fontWeight="500" fontSize="3xl" color="gray.50" marginBottom="5">
+        <Box mx={["8", "36"]} display="flex" justifyContent="center" flexDirection="column">
+          <Text fontWeight="500" fontSize={["2xl", "3xl"]} color="gray.50" marginBottom="5">
             5 Continentes,<br />
             infinitas possibilidades. <br />
           </Text>
@@ -25,15 +29,19 @@ export function Banner() {
           </Text>
 
         </Box>
+        {
+          isWideVersion && (
+            <Image
+              src="images/Airplane.svg"
+              position="relative"
+              marginRight="36"
+              top="12"
+              boxSize="96"
 
-        <Image
-          src="images/Airplane.svg"
-          position="relative"
-          marginRight="36"
-          top="12"
-          boxSize="96"
+            />
+          )
+        }
 
-        />
 
 
       </Box>

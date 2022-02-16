@@ -12,13 +12,22 @@ export function BannerContinent({ imageUrl, continent }: BannerContientProps) {
         backgroundImage={imageUrl}
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
-        height={500}
+        height={[150, 250, 500]}
         width="100vw"
         display="flex"
         justifyContent="space-between"
 
       >
-        <Heading position="relative" flex="1" alignSelf="flex-end" my="14" mx="36" color="gray.50" fontSize="5xl">
+        <Heading
+          position="relative"
+          display="flex"
+          alignSelf={["center", "flex-end"]}
+          justifyContent={["center", "left"]}
+          width="100%"
+          my={[0, "7", "14"]}
+          mx={[0, "16", "36"]}
+          color="gray.50"
+          fontSize={["3xl", "4xl", "5xl"]}>
           {continent}
         </Heading>
 

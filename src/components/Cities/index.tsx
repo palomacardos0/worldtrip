@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, GridItem, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { CitiesBox } from "./CitiesBox";
 
 export function Cities() {
@@ -15,19 +15,44 @@ export function Cities() {
 
   return (
     <Flex direction="column">
-      <Heading mb="10">
+      <Heading mb="10" fontSize={['2xl', '4xl']} fontWeight={['500', '600']}>
         Cidades +100
       </Heading>
-      <SimpleGrid flex="1" gap="4" minChildWidth="250px" >
+      <SimpleGrid flex="1" gap="4" minChildWidth="250px" spacing="4">
+        <GridItem display="flex" justifyContent={["center", "left"]}>
+          <CitiesBox
+            city="Londres"
+            country="Reino Unido"
+            flag="https://www.estudopratico.com.br/wp-content/uploads/2016/07/bandeira-reino-unido.jpg"
+            flagAlt="bandeira Reino Unido"
+            imageUrl="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/londres-big-ben.jpeg"
+            imageAlt="Londres"
+          />
 
-        <CitiesBox
-          city="Londres"
-          country="Reino Unido"
-          flag="https://www.estudopratico.com.br/wp-content/uploads/2016/07/bandeira-reino-unido.jpg"
-          flagAlt="bandeira Reino Unido"
-          imageUrl="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/londres-big-ben.jpeg"
-          imageAlt="Londres"
-        />
+        </GridItem>
+        <GridItem display="flex" justifyContent={["center", "left"]}>
+          <CitiesBox
+            city="Londres"
+            country="Reino Unido"
+            flag="https://www.estudopratico.com.br/wp-content/uploads/2016/07/bandeira-reino-unido.jpg"
+            flagAlt="bandeira Reino Unido"
+            imageUrl="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/londres-big-ben.jpeg"
+            imageAlt="Londres"
+          />
+
+        </GridItem>
+        <GridItem display="flex" justifyContent={["center", "left"]}>
+          <CitiesBox
+            city="Londres"
+            country="Reino Unido"
+            flag="https://www.estudopratico.com.br/wp-content/uploads/2016/07/bandeira-reino-unido.jpg"
+            flagAlt="bandeira Reino Unido"
+            imageUrl="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/londres-big-ben.jpeg"
+            imageAlt="Londres"
+          />
+
+        </GridItem>
+
       </SimpleGrid>
     </Flex>
   )

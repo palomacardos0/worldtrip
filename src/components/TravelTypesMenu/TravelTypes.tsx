@@ -1,4 +1,4 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 interface TravelTypesProps {
   title: string;
@@ -6,10 +6,18 @@ interface TravelTypesProps {
 }
 
 export function TravelTypes({ title, imageUrl }: TravelTypesProps) {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  })
   return (
-    <Box display="flex" alignItems="center" flexDirection="column" justifyContent="center">
-      <Image src={imageUrl} />
-      <Text>{title}</Text>
+    <Box display="flex" alignItems="center" flexDirection={["row", "row", "row", "column"]} justifyContent="center" mx="6">
+      {
+        isWideVersion ? <Image src={imageUrl} width={85} mb="6" /> :
+          <Text color="yellow.400" fontSize="4xl" mr="2">•</Text>
+      }
+
+      <Text fontSize={["lg", "1xl"]} color="gray.600">{title}</Text>
     </Box>
   )
 }

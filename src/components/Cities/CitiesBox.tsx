@@ -10,7 +10,7 @@ interface CitiesBoxProps {
 }
 export function CitiesBox({ imageUrl, imageAlt, country, city, flag, flagAlt }: CitiesBoxProps) {
   return (
-    <Box maxW='64' borderWidth='1px' borderRadius='lg' overflow='hidden' borderColor="yellow.400">
+    <Box maxW={['56', '64']} borderWidth='1px' borderRadius='lg' overflow='hidden' borderColor="yellow.400" >
       <Image src={imageUrl} alt={imageAlt} />
 
       <Box p='6' display="flex" justifyContent="space-between" alignItems="center">

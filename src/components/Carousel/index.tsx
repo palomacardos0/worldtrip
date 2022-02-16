@@ -14,7 +14,7 @@ import { Slide } from "./Slide";
 export default function Carousel() {
 
   return (
-    <Flex position="relative" height="100%" mx="24" px="24" my="12">
+    <Flex position="relative" height="100%" mx={["0", "0", "12", "24"]} px={["0", "0", "12", "24"]} my="12">
       <Swiper navigation={true} pagination={true} modules={[Navigation, Pagination]} className={styles.swiper} >
         <SwiperSlide>
           <Slide
