@@ -1,11 +1,10 @@
-import { Flex, Grid, GridItem, SimpleGrid } from "@chakra-ui/react"
+import { Flex, GridItem, SimpleGrid } from "@chakra-ui/react"
 import { TravelTypes } from "./TravelTypes"
 
 export function TravelTypesMenu() {
   return (
     <Flex display="flex" alignItems="center" justifyContent="center" marginTop="20" marginBottom="20">
       <SimpleGrid flex="1" minChildWidth="150px" mx="32" templateColumns={["1fr 1fr", "1fr 1fr", "1fr 1fr", "repeat(5, 1fr)"]}>
-        {/* <Grid templateColumns='repeat(5, 1fr)' mx="32"> */}
         <GridItem>
           <TravelTypes imageUrl="images/Cocktail.svg" title="vida noturna" />
         </GridItem>
@@ -22,7 +21,6 @@ export function TravelTypesMenu() {
           <TravelTypes imageUrl="images/Earth.svg" title="e mais..." />
         </GridItem>
 
-        {/* </Grid> */}
 
       </SimpleGrid>
 

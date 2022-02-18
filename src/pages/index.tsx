@@ -3,10 +3,28 @@ import { Banner } from "../components/Banner";
 import { TravelTypesMenu } from "../components/TravelTypesMenu";
 import { Divider, Text } from "@chakra-ui/react";
 import Carousel from "../components/Carousel";
+import { GetStaticProps } from "next";
+import api from "./api/api"
+import { Params } from "next/dist/server/router";
+import Continent from "./[slug]";
+import Head from "next/head";
 
-export default function Home() {
+interface ContinentProps {
+  slide: string;
+  name: string;
+  phrase: string;
+  link: string;
+}
+interface HomeProps {
+  continents: ContinentProps[];
+}
+
+export default function Home({ continents }: HomeProps) {
   return (
     <>
+      <Head>
+        <title>Worldtrip</title>
+      </Head>
       <Banner />
       <TravelTypesMenu />
       <Center>
@@ -18,8 +36,18 @@ export default function Home() {
           Vamos Nessa? <br /> Então escolha seu continente
         </Text>
       </Center>
-      <Carousel />
+      <Carousel continents={continents} />
 
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const continents = await api.get('/continents').then(response => response.data);
+
+  return {
+    props: {
+      continents
+    }
+  }
 }

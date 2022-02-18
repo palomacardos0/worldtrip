@@ -11,11 +11,9 @@ export function Header() {
   useEffect(() => {
     if (router.asPath !== '/') {
       SetBackButton(true)
-      console.log(backButton)
     }
     else {
       SetBackButton(false)
-      console.log(backButton)
     }
   }, [router.asPath])
 
@@ -40,8 +38,6 @@ export function Header() {
           fontSize={["18", "24"]}
           variant="ghost"
           size="true"
-          // mx={1}
-          // fontSize={["16", "18", "24"]}
           onClick={redirectHome} />
       )
       }

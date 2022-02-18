@@ -1,0 +1,118 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "link": "africa",
+      "slide": "images/Africa.jpg",
+      "phrase": "A África é conhecida pela sua pluralidade étnica e cultural.",
+      "image": "https://images.unsplash.com/photo-1528277342758-f1d7613953a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "cities_100": [
+        {
+          "name": "Johannesburg",
+          "country": "África do Sul",
+          "image": "https://images.unsplash.com/photo-1610307766999-01f45d259959?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "flag": "https://www.sport-histoire.fr/Sources/Drapeaux/Afrique/Afrique_du_Sud.png"
+        }
+      ],
+      "name": "Africa",
+      "descripition": "a Africa é o segundo continente mais populoso da Terra com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial, e 54 países independentes.",
+      "languages": 2092,
+      "countries": 54
+    },
+    {
+      "id": 2,
+      "link": "asia",
+      "slide": "images/Asia.jpg",
+      "phrase": "A Ásia é o maior dos continentes, tanto em área como em população.",
+      "image": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "cities_100": [
+        {
+          "name": "Hong Kong",
+          "country": "China",
+          "image": "https://images.unsplash.com/photo-1619796404374-aff912b43cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80",
+          "flag": "https://www.sport-histoire.fr/Sources/Drapeaux/Asie/Chine.png"
+        }
+      ],
+      "name": "Asia",
+      "descripition": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "languages": 2301,
+      "countries": 50
+    },
+    {
+      "id": 3,
+      "link": "europa",
+      "slide": "images/Europe.jpg",
+      "phrase": "O continente mais Antigo",
+      "image": "https://images.unsplash.com/photo-1493707553966-283afac8c358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "cities_100": [
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "image": "https://images.unsplash.com/photo-1509024644558-2f56ce76c490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "flag": "https://www.sport-histoire.fr/Sources/Drapeaux/Europe/Italie.png"
+        }
+      ],
+      "name": "Europa",
+      "descripition": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "languages": 24,
+      "countries": 50
+    },
+    {
+      "id": 4,
+      "link": "america-do-norte",
+      "slide": "images/North-America.jpg",
+      "phrase": "Na América do Norte se encontra maior fronteira em termos de extensão do planeta.",
+      "image": "https://images.unsplash.com/photo-1589083130544-0d6a2926e519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "cities_100": [
+        {
+          "name": "Cancun",
+          "country": "México",
+          "image": "https://images.unsplash.com/photo-1570737543098-0983d88f796d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=986&q=80",
+          "flag": "https://www.sport-histoire.fr/Sources/Drapeaux/Amerique/Mexique.png"
+        }
+      ],
+      "name": "Améria do Norte",
+      "descripition": "A América do Norte é um subcontinente que compreende a porção setentrional do continente americano.",
+      "languages": 14,
+      "countries": 3
+    },
+    {
+      "id": 5,
+      "link": "america-do-sul",
+      "slide": "images/South-America.jpg",
+      "phrase": "Uma das regiões mais biodiversas de todo o planeta.",
+      "image": "https://images.unsplash.com/photo-1547212630-6cfbb67519f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "cities_100": [
+        {
+          "name": "Buenos Aires",
+          "country": "Argentina",
+          "image": "https://images.unsplash.com/photo-1606839963602-d86bc4b1d527?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80",
+          "flag": "https://www.sport-histoire.fr/Sources/Drapeaux/Amerique/Argentine.png"
+        }
+      ],
+      "name": "América do Sul",
+      "descripition": "A América do Sul é um continente que compreende a porção meridional da América. Também é considerada um subcontinente do continente americano.",
+      "languages": 9,
+      "countries": 12
+    },
+    {
+      "id": 6,
+      "link": "oceania",
+      "slide": "images/Oceania.jpg",
+      "phrase": "A Oceania possui mais de 10 mil ilhas que constituem 14 países independentes",
+      "image": "https://images.unsplash.com/photo-1546268060-2592ff93ee24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "cities_100": [
+        {
+          "name": "Sydney",
+          "country": "Austrália",
+          "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "flag": "https://www.sport-histoire.fr/Sources/Drapeaux/Oceanie/Australie.png"
+        }
+      ],
+      "name": "Ocania",
+      "descripition": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico. O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville.",
+      "languages": 18,
+      "countries": 12
+    }
+  ]
+}

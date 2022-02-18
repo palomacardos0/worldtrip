@@ -16,8 +16,10 @@ export function TravelTypes({ title, imageUrl }: TravelTypesProps) {
         isWideVersion ? <Image src={imageUrl} width={85} mb="6" /> :
           <Text color="yellow.400" fontSize="4xl" mr="2">•</Text>
       }
+      <Box>
+        <Text fontSize={["lg", "1xl"]} color="gray.600">{title}</Text>
 
-      <Text fontSize={["lg", "1xl"]} color="gray.600">{title}</Text>
+      </Box>
     </Box>
   )
 }
